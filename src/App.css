@@ -1,0 +1,215 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0ea5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Flex layout */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Form styling */
+.form-container {
+  background-color: #1e293b;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #334155;
+  color: #f8fafc;
+  font-size: 15px;
+}
+
+.form-container input::placeholder {
+  color: #cbd5e1;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #0ea5e9, #06b6d4);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-container button:hover {
+  transform: scale(1.03);
+}
+
+/* Patient list styling */
+.patient-list-container {
+  flex: 2;
+  min-width: 300px;
+}
+
+.patient-list-container h2 {
+  margin-bottom: 20px;
+  color: #0ea5e9;
+  font-size: 24px;
+}
+
+.patient-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.patient-card:hover {
+  transform: translateY(-4px);
+}
+
+.patient-card p {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #f1f5f9;
+}
+
+.patient-card strong {
+  color: #38bdf8;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-pdf {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #3b82f6;
+}
+
+.btn-edit:hover {
+  background-color: #2563eb;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.btn-pdf {
+  background-color: #10b981;
+}
+
+.btn-pdf:hover {
+  background-color: #059669;
+}
+.chatbot-btn {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chatbot-btn:hover {
+  opacity: 0.9;
+}
+/* Report upload input styling */
+.file-upload {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #1e293b;
+  border: 2px dashed #334155;
+  border-radius: 8px;
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.file-upload:hover {
+  border-color: #00eaff;
+}
+
+/* Optional: text above the file input */
+.upload-label {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* "View Report" link styling inside patient card */
+.patient-card a {
+  color: #00eaff;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.patient-card a:hover {
+  color: #00c2ff;
+}

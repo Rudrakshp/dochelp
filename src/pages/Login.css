@@ -1,0 +1,93 @@
+/* Full page wrapper for vertical & horizontal centering */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 20px;
+}
+
+/* Centered login card */
+.login-box {
+  background-color: #1e293b;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+  max-width: 400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Title styling */
+.login-title {
+  color: #00eaff;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #334155;
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Transparent fading placeholder */
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+  transition: opacity 0.3s ease;
+}
+
+/* Disappear placeholder on focus */
+.login-box input:focus::placeholder {
+  opacity: 0;
+}
+
+/* Main login button */
+.login-box button {
+  width: 100%;
+  background: linear-gradient(to right, #00eaff, #00bcd4);
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+  background: linear-gradient(to right, #00c2ff, #0099b3);
+}
+
+/* Chatbot button */
+.chatbot-button {
+  width: 100%;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background: linear-gradient(to right, #7b2cbf, #3a0ca3);
+}
